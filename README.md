@@ -4,7 +4,7 @@
 ## 1. Informe os comandos relacionados a procesos no linux que já utilizou na prática e o porque de cada um deles
    - "ps aux", "ps aux | grep", "htop", "kill -9" e "systemctl" 
 ## 2. Explique o significado completo da seguinte saída do comando ls -l (-rwxr-x--- 1 devops users 1024 Mar 25 12:00 script.sh)
-   - "-rwxr-x---" = Seriam as permissões do arquivo, "r" para leitura, "w" para escrita, "x" para execução do arquivo. E os  3 primeiros "rwx" seriam as permissões para o dono do arquivo, e os próximos "r-x" seriam para o grupo
+   - "-rwxr-x---" = Seriam as permissões do arquivo, "r" para leitura, "w" para escrita, "x" para execução do arquivo. E os     3 primeiros "rwx" seriam as permissões para o dono do arquivo, e os próximos "r-x" seriam para o grupo
     "devops" = Dono do arquivo 
     "users" = Grupo do arquivo
     "1024" = Tamanho do arquivo
