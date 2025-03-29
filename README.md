@@ -35,7 +35,10 @@
     - Ele é um caractere que inidica o inicio do script e qual shell ele vai utilizar. 
         Ex: #!/bin/bash
 ## 11. Explique a diferença entre os comandos if, case e while em um script shell. Dê um exemplo prático de uso para cada um.
-    - 
+    - if = Utilizado para condições
+      case = Utilizado para comparações
+      While = Utilizado para criar um loop
+      Ex:
 ## 12. Qual a diferença entre $1, $@ e $# em um Shell Script? Dê um exemplo de um script que utilize essas variáveis para manipular argumentos passados na linha de comando.
     -
 ## 13. Explique como você faria um dump de um banco de dados Mysql e quais informações precisaria para isso.
