@@ -2,22 +2,27 @@
 
 # Questões teóricas
 ## 1. Informe os comandos relacionados a procesos no linux que já utilizou na prática e o porque de cada um deles
-   - "ps aux", "ps aux | grep", "htop", "kill -9" e "systemctl" 
+      - "ps aux", "ps aux | grep", "htop", "kill -9" e "systemctl" 
 ## 2. Explique o significado completo da seguinte saída do comando ls -l (-rwxr-x--- 1 devops users 1024 Mar 25 12:00 script.sh)
-   - "-rwxr-x---" = Seriam as permissões do arquivo, "r" para leitura, "w" para escrita, "x" para execução do arquivo. E os     3 primeiros "rwx" seriam as permissões para o dono do arquivo, e os próximos "r-x" seriam para o grupo
-    "devops" = Dono do arquivo 
-    "users" = Grupo do arquivo
-    "1024" = Tamanho do arquivo
-    "Mar 25 12:00" = Data e hora da criação do arquivo
-    "script.sh" =  Nome do arquivo (.sh seria a extensão indicando que o arquivo é um script )
+      - "-rwxr-x---" = Seriam as permissões do arquivo, "r" para leitura, "w" para escrita, "x" para execução do arquivo. E os     3 primeiros "rwx" seriam as permissões para o dono do arquivo, e os próximos "r-x" seriam para o grupo
+       "devops" = Dono do arquivo 
+       "users" = Grupo do arquivo
+       "1024" = Tamanho do arquivo
+       "Mar 25 12:00" = Data e hora da criação do arquivo
+       "script.sh" =  Nome do arquivo (.sh seria a extensão indicando que o arquivo é um script )
 ## 3. Quais comandos você utiliza para avaliar possíveis problemas em cpu,memória,disco,rede em sistemas operacionais linux
     - "htop", "free -h", "df -h", "ncdu", "ping" e "telnet" 
 ## 4. Explique a diferença entre topologia física e topologia lógica de uma rede. Dê um exemplo de cada uma.
     - Topologia fisica seria como o nome diz a parte fisica da rede como switch e cabo de rede enquanto a lógica seria os protocolos e a comunicação da rede em si
 ## 5. Quais são as principais características das topologias de rede estrela, anel e malha? Cite vantagens e desvantagens de cada uma.
-    - 
+    - Estrela = Todos os dispositivos se conectam a um nó central
+             Mais resiliencia nos dispotivos mas se o no central falhar toda a rede ficara fora
+      Anel = Os dispositivos são conectados lado a lado em um circulo
+            Trafego de rede com melhor desempenho porem se algum  dispositivo falhar isso vai afetar todos os seguintes
+      Malha = Todos os dispositivos se conectam diretamente 
+            Alta disponibilidade pois todos se interligam mas alto custo para manutenção.
 ## 6. Por que a topologia em malha é frequentemente utilizada em ambientes críticos, como data centers e infraestrutura de nuvem? Como ela contribui para a resiliência da rede?
-    - 
+    - Por conta da sua resiliencia e segurança em relação a falhas ja que todos se interligam, caso ocorra de algum dispositivo apresentar falhas não vai comprometer o restante da rede
 ## 7. Explique a diferença entre EC2, S3 e RDS na AWS. Para que tipo de aplicação cada um é mais adequado?
     - EC2 = Seria os servidores em nuvem o qual você consegue criar com as caracteristicas que necessita como com foco em memoria ou CPU (conhecido como familias na AWS) e o mais adequado para ele seria suas aplicações como nginx, python e sites Web(pode ser utilizado como DB e rodar Containers mas não é o indicado)
     S3 = É um serviço de armazenamento escalavel e sua aplicação seria para guardar imagens que a aplicação vai buscar ou até mesmo a criação de backups e armazenamento de logs.
