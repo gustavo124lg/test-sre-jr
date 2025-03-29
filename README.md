@@ -40,11 +40,15 @@
       While = Utilizado para criar um loop
 Ex: [Exrcicio-11](https://github.com/gustavo124lg/test-sre-jr/blob/main/Exercicio-11/exemplo.sh) 
 ## 12. Qual a diferença entre $1, $@ e $# em um Shell Script? Dê um exemplo de um script que utilize essas variáveis para manipular argumentos passados na linha de comando.
-    -
+    - $1 = Primeiro argumento
+      $@ = Apresenta todos os argumentos em lista
+      $# = Demonstra a quantidade de argumento passado
+Ex: [Exercicio-12](https://github.com/gustavo124lg/test-sre-jr/blob/main/Exercicio-12/exemplo.sh)
 ## 13. Explique como você faria um dump de um banco de dados Mysql e quais informações precisaria para isso.
-    -
+    - Para realizar o Dump é necessario ter o usuario, senha do usuario e nome do banco.
+        'mysqldump -u usuario -p senha banco_de_dados > backup_do_banco.sql'
 ## 14. Explique como faria o controle de acesso em um banco de dados Mysql e quais informações precisaria para essa demanda.
-    -
+    - Criaria o usuario e senha do banco e dependendo da necessidade da atividade que ele for exercer liberaria as permissões focando no principio do minimo privilegio. Para criar esse acesso precisaria do usuario, senha do usuario, nome do banco e quais ações esse usario vai precisar ter acesso.
 
 # Questões práticas
 
