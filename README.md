@@ -38,7 +38,7 @@
     - if = Utilizado para condições
       case = Utilizado para comparações
       While = Utilizado para criar um loop
-Ex: [Exrcicio-11](https://github.com/gustavo124lg/test-sre-jr/tree/main/Exercicio-11) 
+Ex: [Exrcicio-11](https://github.com/gustavo124lg/test-sre-jr/blob/main/Exercicio-11/exemplo.sh) 
 ## 12. Qual a diferença entre $1, $@ e $# em um Shell Script? Dê um exemplo de um script que utilize essas variáveis para manipular argumentos passados na linha de comando.
     -
 ## 13. Explique como você faria um dump de um banco de dados Mysql e quais informações precisaria para isso.
